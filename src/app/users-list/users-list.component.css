@@ -1,0 +1,13 @@
+.users_list_container {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background: url('../../assets/bg.jpg');
+}
+
+.users_list {
+    width: 100%;
+    background-color: rgb(16, 3, 29);
+  }

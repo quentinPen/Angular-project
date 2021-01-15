@@ -1,0 +1,12 @@
+<div class="homepage_container">
+    <h1>Bienvenue sur votre boutique Angular</h1>
+    <h2>La boutique</h2>
+    <div class="article_homepage">
+        <div *ngFor="let monproduit of products">
+            <app-product-card [id]="monproduit.id" [price]="monproduit.price" [description]="monproduit.description"
+            [image]="monproduit.image" [category]="monproduit.category" [title]="monproduit.title"
+            [bgColor]="bgColor"></app-product-card>
+        </div>
+    </div>
+    <button class="btn_perso" routerLink="shop">Voir tous les articles</button>
+</div>

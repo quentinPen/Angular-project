@@ -1,0 +1,17 @@
+
+<div class="user_profile">
+    <div class="icone_container">
+        <fa-icon [icon]="faUser"></fa-icon>
+    </div>
+    <p>{{user.name.firstname}} {{user.name.lastname}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.phone}}</p>
+    <div class="user_address">
+        <div class="icone_container">
+            <fa-icon [icon]="faAddressCard"></fa-icon>
+        </div>
+        <p>{{user.address.city}} zip {{user.address.zipcode}}</p>
+        <p>{{user.address.street}} n° {{user.address.number}}</p>
+        <div class="map_perso" id="mapid{{user.id}}"></div>
+    </div>
+</div>

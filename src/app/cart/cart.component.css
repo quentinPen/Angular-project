@@ -1,0 +1,67 @@
+.cart_product_container {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.473) 0%, rgba(219, 219, 219, 0.3) 42%, rgba(40, 40, 40, 0) 100%)
+
+}
+.cart_product_container img{
+    width: 6rem;
+    border-radius: 50%;
+    height: 6rem;
+    background-color: white;
+    object-fit: contain;
+}
+
+.picto_cart {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 0.5rem;
+    margin: auto;
+}
+.icone {
+    font-size: 1.5rem;
+    color: white;
+}
+.total {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.trash_icone {
+    color: rgb(126, 22, 22);
+    position: absolute;
+    top: 3.2rem;
+    right: 0.2rem;
+    cursor: pointer;
+}
+.picto_cart span {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.2rem;
+    z-index: 2;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 1rem;
+}

@@ -1,0 +1,77 @@
+
+.main_container_shop{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: url('../../../assets/bg.jpg');
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.search_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.search {
+  background-color: rgb(16, 3, 29);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 1rem;
+  max-height: 2rem;
+}
+
+.search label {
+  margin: 0 0.5rem;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.products_list {
+  width: 90%;
+  align-items: flex-start;
+}
+
+.cart_container {
+  width: 10%;
+  background: url('https://i.pinimg.com/originals/61/db/5a/61db5a5f5d148f6fa4f7f3635b0a596a.jpg');
+  height: 100vh;
+  position: sticky;
+  top: 4rem;
+  padding: 3rem 0;
+  overflow-y: auto;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .users_list {
+    width: 40%;
+    background-color: rgb(16, 3, 29);
+  }
+
+  .products_list {
+    width: 60%;
+  }
+}
+ */
+
+
+@media screen and (max-width: 1200px) {
+  .cart_container {
+    width: 30%;
+  }
+
+  .products_list {
+    width: 70%;
+  }
+}

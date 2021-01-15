@@ -1,0 +1,16 @@
+<div class="product_card_container" [ngStyle]="bgColor">
+    <h2>{{title}}</h2>
+    <img [src]="image" alt="">
+    <p class="product_card_description">{{description}}</p>
+    <span class="product_card_price">{{price}} €</span>
+    <span *ngIf="stock<15" class="warning alert" >Dépéchez vous!</span>
+    <span 
+    [ngClass]="{
+        'warning': stock < 5,
+        'md-warning' : stock < 20 
+    }"
+    >{{stock}} en stock</span>
+    
+    <button class="btn-perso" (click)="addToCartClick()"> <fa-icon [icon]="faShoppingCart"></fa-icon> Ajouter au panier</button>
+    <span class="product_card_category">{{category}}</span>
+</div>

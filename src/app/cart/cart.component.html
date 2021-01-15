@@ -1,0 +1,13 @@
+<div class="picto_cart">
+	<fa-icon class="icone" [icon]="faShoppingCart"></fa-icon>
+	<span>{{productsCart.length}}</span>
+</div>
+<p class="total" *ngIf="productsCart.length > 0">{{total.price |currency:'EUR':true}}</p>
+<div class="cart_product_container" *ngFor="let product of productsCart">
+
+	<p>{{product.title | slice:0:22 }}</p>
+	<p>{{product.price | currency:'EUR':true }}</p>
+	<img src="{{product.image}}" alt="{{product.title}}">
+	<fa-icon (click)="removeToCartClick()" class="icone trash_icone" [icon]="faTrash"></fa-icon>
+
+</div>

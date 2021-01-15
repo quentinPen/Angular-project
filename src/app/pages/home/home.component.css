@@ -1,0 +1,33 @@
+.homepage_container {
+    width: 100%;
+    min-height: 85vh;
+    background: url('../../../assets/bg.jpg');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+}
+.article_homepage {
+    width: 70%;
+    background-color: rgb(6, 3, 26);
+    color: white;
+    display: flex;
+}
+
+.btn_perso {
+    margin: 3rem auto;
+    background-color:  rgb(6, 3, 26);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+<div class="main_container_shop">
+	<section class="flex products_list">
+		<div class="search_container">
+			<div class="search">
+				<label for="change-color">Thème</label>
+				<input type="color" (change)="onChangeColor($event)" id="change-color" name="change-color" value="#ece1cf">
+			</div>
+			<div class="search">
+				<label for="cat-select">Catégorie:</label>
+				<select name="cat-select" id="cat-select" (change)="onChangeSelect($event)">
+					<option value="">Tout</option>
+					<option value="men clothing">Mode Homme</option>
+					<option value="women clothing">Mode Femme</option>
+					<option value="jewelery">Bijouterie</option>
+					<option value="electronics">Electronique</option>
+				</select>
+			</div>
+			<div class="search">
+				<label for="search-bar">
+					<fa-icon [icon]="faSearch"></fa-icon>
+				</label>
+				<input id="search-bar" type="text" (keyup)="onChangeText($event)">
+			</div>
+		</div>
+		<div *ngFor="let monproduit of products">
+			<app-product-card (addToCartEvent)="addToCart($event)" [id]="monproduit.id" [price]="monproduit.price" [description]="monproduit.description" [image]="monproduit.image" [category]="monproduit.category" [title]="monproduit.title" [bgColor]="bgColor"></app-product-card>
+		</div>
+	</section>
+	<aside class="cart_container">
+		<app-cart [productsCart]="displayProductsCart" [total]="total" (removeFromCartEvent)="removeToCart($event)"></app-cart>
+	</aside>
+</div>
